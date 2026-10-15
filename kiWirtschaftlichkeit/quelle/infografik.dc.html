@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>KI-Rentabilität im Entwicklerteam</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1F5FAE}a:hover{color:#0F1B2D}
+</style>
+</helmet>
+<div style="width: 1200px; height: 3360px; box-sizing: border-box; padding: 72px; background: #F4F6F8; color: #0F1B2D; font-family: 'IBM Plex Sans', sans-serif; display: flex; flex-direction: column; gap: 40px">
+
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5668">Wirtschaftlichkeit · Open-Weight-KI selbst gehostet · 12 Monate</div>
+<h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 64px; line-height: 1.05; font-weight: 700">Rechnet sich die eigene KI (bei sich im Haus) für 50 Entwickler?</h1>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 40px; line-height: 1.15; font-weight: 700; color: {{accent}}">{{yearNetPlain}} gespart · {{endShort}} Produktivität nach 12 Monaten</div>
+<div style="font-size: 22px; line-height: 1.4; color: #2E3A4D; max-width: 960px">50 Entwickler, ein 8× NVIDIA H100 Node, ein Open-Weight-Modell. Was kostet das, wie viele User Stories bringt es zusätzlich – und wie viel spart das Unternehmen in einem Jahr?</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 20px; background: #FFFFFF; border-radius: 16px; padding: 36px 40px">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700">1 · Kosten pro Monat</h2>
+<div style="display: flex; gap: 24px; font-size: 15px; color: #2E3A4D">
+<div style="display: flex; align-items: center; gap: 8px"><div style="width: 14px; height: 14px; border-radius: 3px; background: #1F5FAE"></div>Personal</div>
+<div style="display: flex; align-items: center; gap: 8px"><div style="width: 14px; height: 14px; border-radius: 3px; background: {{accent}}"></div>GPU-Node</div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 160px 640px minmax(0, 1fr); align-items: center; row-gap: 18px; column-gap: 16px">
+<div style="font-size: 18px; font-weight: 600">Ohne KI</div>
+<div style="display: flex; height: 40px"><div style="width: 617px; background: #1F5FAE; border-radius: 6px"></div></div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 18px; text-align: right">375.000 €</div>
+<div style="font-size: 18px; font-weight: 600">Mit eigener KI</div>
+<div style="display: flex; height: 40px"><div style="width: 617px; background: #1F5FAE; border-radius: 6px 0 0 6px"></div><div style="width: 23px; background: {{accent}}; border-radius: 0 6px 6px 0"></div></div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 18px; text-align: right">389.000 €</div>
+</div>
+<div style="font-size: 18px; line-height: 1.45; color: #2E3A4D">Der GPU-Node mit ca. <strong style="color: #0F1B2D">14.000 €</strong> macht nur <strong style="color: #0F1B2D">+3,7 %</strong> der Teamkosten aus – der schmale orange Streifen.</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 18px; background: #0F1B2D; color: #FFFFFF; border-radius: 16px; padding: 32px 40px">
+<div style="display: flex; align-items: center; gap: 32px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700">2 · Break-Even pro Entwickler</h2>
+<div style="font-family: 'Space Grotesk', sans-serif; font-size: 96px; font-weight: 700; line-height: 1; color: {{accent}}">18 min</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; font-size: 19px; line-height: 1.45; color: #D5DCE6; max-width: 620px">
+<div><strong style="color: #FFFFFF">So viel Zeit muss jeder Entwickler am Tag durch KI einsparen, damit der GPU-Node sein Geld wieder einbringt.</strong></div>
+<div>Der Node kostet 3,7 % der Personalkosten – und 3,7 % eines 8-Stunden-Tages sind 18 Minuten. Für das ganze Team heißt das: nur {{breakEvenStories}} User Stories mehr pro Monat. Jede weitere Minute ist Gewinn.</div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; height: 28px; border-radius: 6px; overflow: hidden; background: #2E3A4D"><div style="width: 40px; background: {{accent}}"></div></div>
+<div style="display: flex; justify-content: space-between; font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #B7C2D1"><div>0 h</div><div>2 h</div><div>4 h</div><div>6 h</div><div>8 h Arbeitstag</div></div>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 20px; background: #FFFFFF; border-radius: 16px; padding: 36px 40px 28px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700">3 · Produktivität: {{endShort}} nach 12 Monaten – {{endStoriesLabel}} statt {{baseLabel}} User Stories pro Monat</h2>
+<div style="font-size: 18px; line-height: 1.45; color: #2E3A4D">Ohne KI bleibt der Durchsatz bei {{baseLabel}} Stories. Mit KI steigt die Produktivität gleichmäßig von 1× auf {{endLabel}} – und der Durchsatz auf {{endStoriesLabel}} Stories im zwölften Monat.</div>
+<div style="display: flex; gap: 32px; font-size: 16px; color: #2E3A4D; flex-wrap: wrap">
+<div style="display: flex; align-items: center; gap: 10px"><div style="width: 28px; height: 4px; border-radius: 2px; background: {{accent}}"></div>Mit KI</div>
+<div style="display: flex; align-items: center; gap: 10px"><div style="width: 28px; height: 4px; border-radius: 2px; background: #1F5FAE"></div>Ohne KI</div>
+<div style="display: flex; align-items: center; gap: 10px"><div style="width: 18px; height: 14px; border-radius: 3px; background: {{accent}}; opacity: 0.18"></div>Zusätzliche Stories</div>
+</div>
+<div style="position: relative; width: 976px; height: 530px">
+<sc-for list="{{grid}}" as="g" hint-placeholder-count="6">
+<div style="position: absolute; left: 60px; width: 870px; top: {{g.top}}px; border-top: 1px solid #DDE3EA"></div>
+<div style="position: absolute; left: 0px; width: 50px; top: {{g.labelTop}}px; text-align: right; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4A5668">{{g.label}}</div>
+</sc-for>
+<svg width="976" height="530" viewBox="0 0 976 530" style="position: absolute; left: 0px; top: 0px" role="img" aria-label="Liniendiagramm: User Stories pro Monat, ohne KI konstant, mit KI steigend">
+<polygon points="{{areaPoints}}" fill="{{accent}}" fill-opacity="0.16"></polygon>
+<polyline points="{{pointsOhne}}" fill="none" stroke="#1F5FAE" stroke-width="4" stroke-linejoin="round"></polyline>
+<polyline points="{{pointsMit}}" fill="none" stroke="{{accent}}" stroke-width="4" stroke-linejoin="round"></polyline>
+</svg>
+<sc-for list="{{dots}}" as="d" hint-placeholder-count="24">
+<div style="position: absolute; left: {{d.left}}px; top: {{d.top}}px; width: 12px; height: 12px; border-radius: 6px; background: #FFFFFF; border: 3px solid {{d.color}}; box-sizing: border-box"></div>
+</sc-for>
+<sc-for list="{{months}}" as="ml" hint-placeholder-count="12">
+<div style="position: absolute; left: {{ml.labelLeft}}px; width: 48px; top: 474px; display: flex; flex-direction: column; align-items: center; gap: 2px">
+<div style="font-size: 15px; font-weight: 600">{{ml.label}}</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #4A5668">{{ml.factor}}</div>
+</div>
+</sc-for>
+<div style="position: absolute; left: 790px; top: {{endMitTop}}px; width: 150px; text-align: right; font-family: 'IBM Plex Mono', monospace; font-size: 16px; font-weight: 500; color: #0F1B2D">{{endStoriesLabel}}</div>
+<div style="position: absolute; left: 790px; top: {{endOhneTop}}px; width: 150px; text-align: right; font-family: 'IBM Plex Mono', monospace; font-size: 16px; font-weight: 500; color: #1F5FAE">{{baseLabel}}</div>
+</div>
+<div style="font-size: 15px; color: #4A5668">Achse: User Stories des ganzen Teams pro Monat · unter dem Monat: Produktivitätsfaktor</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 20px; background: #FFFFFF; border-radius: 16px; padding: 36px 40px 28px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700">4 · Kostenersparnis: {{yearNetPlain}} in 12 Monaten</h2>
+<div style="font-size: 18px; line-height: 1.45; color: #2E3A4D">Was würde dieselbe Leistung ohne KI kosten? Man bräuchte entsprechend mehr Entwickler. Die Differenz zu den tatsächlichen Kosten ist die Ersparnis.</div>
+<div style="display: flex; gap: 32px; font-size: 16px; color: #2E3A4D; flex-wrap: wrap">
+<div style="display: flex; align-items: center; gap: 10px"><div style="width: 14px; height: 14px; border-radius: 3px; background: #1F5FAE"></div>Kosten ohne KI für dieselbe Leistung</div>
+<div style="display: flex; align-items: center; gap: 10px"><div style="width: 14px; height: 14px; border-radius: 3px; background: {{accent}}"></div>Tatsächliche Kosten mit KI</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px; align-items: end; height: 400px; border-bottom: 2px solid #0F1B2D">
+<sc-for list="{{months}}" as="item" hint-placeholder-count="12">
+<div style="display: flex; flex-direction: column; justify-content: flex-end; height: 100%">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-align: center; color: #2E3A4D; padding-bottom: 6px">{{item.ohneLabel}}</div>
+<div style="display: flex; align-items: flex-end; gap: 4px">
+<div style="flex: 1 1 0; height: {{item.ohneH}}px; background: #1F5FAE; border-radius: 4px 4px 0 0"></div>
+<div style="flex: 1 1 0; height: {{item.mitH}}px; background: {{accent}}; border-radius: 4px 4px 0 0"></div>
+</div>
+</div>
+</sc-for>
+</div>
+<div style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 16px; margin-top: -10px">
+<sc-for list="{{months}}" as="item" hint-placeholder-count="12">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 4px">
+<div style="font-size: 15px; font-weight: 600">{{item.label}}</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 500; color: {{item.saveColor}}">{{item.saveLabel}}</div>
+</div>
+</sc-for>
+</div>
+<div style="font-size: 15px; color: #4A5668; margin-top: -10px">Über den Säulen: Kosten ohne KI in Mio. € · unter dem Monat: Ersparnis</div>
+</div>
+
+<div style="display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 16px; background: #0F1B2D; color: #FFFFFF; border-radius: 16px; padding: 32px 36px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700">5 · Jahresbilanz: {{yearNetPlain}} netto</h2>
+<div style="display: grid; grid-template-columns: minmax(0, 1fr) auto; row-gap: 12px; font-size: 18px; color: #D5DCE6">
+<div>Mehrwert durch KI</div><div style="font-family: 'IBM Plex Mono', monospace; text-align: right; color: #FFFFFF">{{yearValue}}</div>
+<div>GPU-Kosten</div><div style="font-family: 'IBM Plex Mono', monospace; text-align: right; color: #FFFFFF">− 168.000 €</div>
+<div style="font-weight: 600; color: #FFFFFF; border-top: 1px solid #3B4A60; padding-top: 10px">Ersparnis netto</div><div style="font-family: 'Space Grotesk', sans-serif; font-size: 30px; font-weight: 700; text-align: right; color: {{accent}}; border-top: 1px solid #3B4A60; padding-top: 6px">{{yearNet}}</div>
+<div>Amortisiert in</div><div style="font-family: 'IBM Plex Mono', monospace; text-align: right; color: #FFFFFF">{{amortLabel}}</div>
+<div>User Stories im Jahr</div><div style="font-family: 'IBM Plex Mono', monospace; text-align: right; color: #FFFFFF">{{yearOhne}} → {{yearMit}}</div>
+<div>Kosten je Story</div><div style="font-family: 'IBM Plex Mono', monospace; text-align: right; color: #FFFFFF">{{costBase}} → Ø {{costAvg}}</div>
+</div>
+<div style="font-size: 16px; line-height: 1.45; color: #B7C2D1">Dieselbe Leistung kostet mit KI {{savePct}} weniger. Mit 4 Nodes für intensive Agenten-Nutzung bleiben netto {{yearNet4}}.</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px; background: #FFFFFF; border-radius: 16px; padding: 32px 36px">
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 700">6 · Preis der Souveränität</h2>
+<div style="display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 0.8fr); row-gap: 12px; font-size: 17px">
+<div style="color: #4A5668; font-size: 15px">8× H100 bei</div><div style="color: #4A5668; font-size: 15px; text-align: right">€/Jahr</div><div style="color: #4A5668; font-size: 15px; text-align: right">vom Nutzen</div>
+<div style="font-weight: 600">Gcore Bare Metal</div><div style="font-family: 'IBM Plex Mono', monospace; text-align: right">159.120</div><div style="font-family: 'IBM Plex Mono', monospace; text-align: right">{{pctGcore}}</div>
+<div style="font-weight: 600">Annahme</div><div style="font-family: 'IBM Plex Mono', monospace; text-align: right">168.000</div><div style="font-family: 'IBM Plex Mono', monospace; text-align: right">{{pctBase}}</div>
+<div style="font-weight: 600">STACKIT (DE)</div><div style="font-family: 'IBM Plex Mono', monospace; text-align: right">555.800</div><div style="font-family: 'IBM Plex Mono', monospace; text-align: right">{{pctStackit}}</div>
+</div>
+<div style="font-size: 16px; line-height: 1.45; color: #2E3A4D">Selbst voll souverän in Deutschland bleibt die Hardware ein kleiner Bruchteil des Nutzens.</div>
+</div>
+</div>
+
+<div style="margin-top: auto; display: flex; flex-direction: column; gap: 6px; padding-top: 20px; border-top: 1px solid #C9D1DC; font-size: 14px; line-height: 1.5; color: #4A5668">
+<div><strong style="color: #2E3A4D">Annahmen:</strong> 7.500 € Arbeitgeberkosten je Entwickler und Monat · 8-h-Tag · {{perDev}} User Stories je Entwickler und Monat ohne KI (ca. 2,5 Personentage je Story) · Produktivität steigt linear von 1× auf {{endLabel}} – ein optimistisches Szenario; kontrollierte Studien messen bisher meist kleinere Effekte · Mehrwert = zusätzliche Leistung × Personalkosten · Recruiting, Einarbeitung und interner Betriebsaufwand nicht enthalten · Mehr Durchsatz setzt voraus, dass Stories schnell genug geschrieben, abgenommen und ausgeliefert werden.</div>
+<div><strong style="color: #2E3A4D">Quellen:</strong> gcore.com/de/pricing/ai (8×H100 SXM Bare Metal, 18,16 €/h × 730 h) · stackit.de Preisliste Compute Engine GPU (n3.104d.g8). Alle Preise netto, Stand Oktober 2026.</div>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#E8590C","options":["#E8590C","#D97706","#C2410C"]},"endFactor":{"editor":"range","default":5,"min":1.5,"max":5,"step":0.5,"unit":"×","section":"Szenario"},"storiesPerDev":{"editor":"int","default":8,"min":1,"max":30,"section":"Szenario"},"$preview":{"width":1200,"height":3360}}'>
+class Component extends DCLogic {
+renderVals() {
+const accent = this.props.accent ?? '#E8590C';
+const end = Number(this.props.endFactor ?? 5);
+const perDev = Number(this.props.storiesPerDev ?? 8);
+const team = 375000, gpu = 14000, mitCost = team + gpu;
+const base = 50 * perDev;
+const dec = (x) => x.toFixed(1).replace('.', ',');
+const num = (x) => Math.round(x).toLocaleString('de-DE');
+const eur = (x) => Math.round(x).toLocaleString('de-DE') + ' €';
+const mio = (x) => (x < 0 ? '− ' : '+ ') + dec(Math.abs(x) / 1e6) + ' Mio. €';
+const short = (x) => {
+const a = Math.abs(x);
+return (x < 0 ? '−' : '+') + (a >= 1e6 ? dec(a / 1e6) + ' Mio.' : Math.round(a / 1000) + ' Tsd.');
+};
+const L = 60, R = 930, T = 16, B = 460;
+const step = Math.max(100, Math.ceil(base * end * 1.08 / 5 / 100) * 100);
+const yMax = step * 5;
+const y = (s) => B - s / yMax * (B - T);
+const grid = [];
+for (let i = 0; i <= 5; i++) {
+grid.push({ top: Math.round(y(i * step)), labelTop: Math.round(y(i * step)) - 9, label: num(i * step) });
+}
+const maxCost = Math.max(team * end, mitCost);
+const H = 340;
+const months = [], mit = [], ohne = [], dots = [];
+let yearMit = 0, yearValue = 0, yearOhneCost = 0, cum = 0, amort = null;
+for (let m = 1; m <= 12; m++) {
+const f = 1 + (end - 1) * (m - 1) / 11;
+const s = base * f;
+const x = L + (m - 1) * (R - L) / 11;
+const ohneCost = team * f;
+const save = ohneCost - mitCost;
+yearMit += s;
+yearValue += (f - 1) * team;
+yearOhneCost += ohneCost;
+cum += save;
+if (amort === null && cum >= 0) amort = m;
+mit.push([x, y(s)]);
+ohne.push([x, y(base)]);
+dots.push({ left: Math.round(x - 6), top: Math.round(y(base) - 6), color: '#1F5FAE' });
+dots.push({ left: Math.round(x - 6), top: Math.round(y(s) - 6), color: accent });
+months.push({
+label: 'M' + m,
+labelLeft: Math.round(x - 24),
+factor: dec(f) + '×',
+ohneLabel: dec(ohneCost / 1e6),
+ohneH: Math.round(ohneCost / maxCost * H),
+mitH: Math.round(mitCost / maxCost * H),
+saveLabel: short(save),
+saveColor: save >= 0 ? '#0B6B3A' : '#B42318'
+});
+}
+const pts = (a) => a.map((p) => p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ');
+const yearNet = yearValue - 12 * gpu;
+const yearOhne = 12 * base;
+const endStories = base * end;
+const pct = (c) => yearValue > 0 ? dec(c / yearValue * 100) + ' %' : '–';
+return {
+accent,
+grid,
+dots,
+months,
+pointsMit: pts(mit),
+pointsOhne: pts(ohne),
+areaPoints: pts(mit.concat(ohne.slice().reverse())),
+endMitTop: Math.round(y(endStories)) - 34,
+endOhneTop: Math.round(y(base)) + 12,
+perDev,
+endLabel: dec(end) + '×',
+baseLabel: num(base),
+endStoriesLabel: num(endStories),
+breakEvenStories: Math.ceil(gpu / (team / base)),
+yearValue: mio(yearValue),
+yearNet: mio(yearNet),
+yearNetPlain: mio(yearNet).replace('+ ', ''),
+endShort: (Number.isInteger(end) ? String(end) : dec(end)) + '×',
+yearNet4: mio(yearValue - 48 * gpu).replace('+ ', ''),
+amortLabel: amort ? 'Monat ' + amort : 'nicht im 1. Jahr',
+yearOhne: num(yearOhne),
+yearMit: num(yearMit),
+costBase: eur(team / base),
+costAvg: eur(12 * mitCost / yearMit),
+savePct: Math.round(yearNet / yearOhneCost * 100) + ' %',
+pctGcore: pct(159120),
+pctBase: pct(168000),
+pctStackit: pct(555800)
+};
+}
+}
+</script>
+</body>
+</html>
