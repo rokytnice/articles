@@ -1,5 +1,7 @@
 # Token sparen mit KI-Agenten
 
+🇬🇧 [English version](README.en.md)
+
 Artikel und Grafiken dazu, wie man beim Arbeiten mit KI-Agenten (Claude Code, Codex, Gemini CLI u. a.) Tokens und Kosten spart – mit herstellerunabhängigen Methoden.
 
 ![21 agnostische Methoden, um Tokens zu sparen](bilder/infografik-token-effizienz.png)
@@ -7,8 +9,10 @@ Artikel und Grafiken dazu, wie man beim Arbeiten mit KI-Agenten (Claude Code, Co
 ## Inhalt
 
 - [methoden.md](methoden.md) – Artikel: 21 agnostische Methoden, nach Layern sortiert, mit Ersparnis, Anmerkungen und Priorisierung
+- [methods.md](methods.md) – Article in English
 - [bilder/](bilder/) – Infografik: alle Methoden entlang des Agenten-Zyklus
-  - [PNG](bilder/infografik-token-effizienz.png) · [PNG @2x](bilder/infografik-token-effizienz@2x.png) · [PDF](bilder/infografik-token-effizienz.pdf)
+  - Deutsch: [PNG](bilder/infografik-token-effizienz.png) · [PNG @2x](bilder/infografik-token-effizienz@2x.png) · [PDF](bilder/infografik-token-effizienz.pdf)
+  - English: [PNG](bilder/infographic-token-efficiency.png) · [PNG @2x](bilder/infographic-token-efficiency@2x.png) · [PDF](bilder/infographic-token-efficiency.pdf)
 - [skills/](skills/) – Skill `token-efficiency` für Claude (Deutsch und Englisch)
 
 ## Skill installieren

@@ -1,5 +1,7 @@
 # Agnostische Methoden zur Token-Einsparung bei KI-Agenten
 
+🇬🇧 [English version](methods.md)
+
 ![Infografik: 21 Methoden im Agenten-Zyklus](bilder/infografik-token-effizienz.png)
 
 Alle Methoden sind herstellerunabhängig: Sie funktionieren mit Claude, GPT, Gemini und jedem gängigen Agenten-Framework.
