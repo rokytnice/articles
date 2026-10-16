@@ -15,13 +15,39 @@ body{margin:0}
 a{color:#1F5FAE}a:hover{color:#0F1B2D}
 </style>
 </helmet>
-<div style="width: 1200px; height: 3360px; box-sizing: border-box; padding: 72px; background: #F4F6F8; color: #0F1B2D; font-family: 'IBM Plex Sans', sans-serif; display: flex; flex-direction: column; gap: 40px">
+<div style="width: 1200px; height: 4000px; box-sizing: border-box; padding: 72px; background: #F4F6F8; color: #0F1B2D; font-family: 'IBM Plex Sans', sans-serif; display: flex; flex-direction: column; gap: 40px">
 
 <div style="display: flex; flex-direction: column; gap: 16px">
 <div style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; color: #4A5668">Wirtschaftlichkeit · Open-Weight-KI selbst gehostet · 12 Monate</div>
 <h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 64px; line-height: 1.05; font-weight: 700">Rechnet sich die eigene KI (bei sich im Haus) für 50 Entwickler?</h1>
 <div style="font-family: 'Space Grotesk', sans-serif; font-size: 40px; line-height: 1.15; font-weight: 700; color: {{accent}}">{{yearNetPlain}} gespart · {{endShort}} Produktivität nach 12 Monaten</div>
 <div style="font-size: 22px; line-height: 1.4; color: #2E3A4D; max-width: 960px">50 Entwickler, ein 8× NVIDIA H100 Node, ein Open-Weight-Modell. Was kostet das, wie viele User Stories bringt es zusätzlich – und wie viel spart das Unternehmen in einem Jahr?</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 20px; background: #0F1B2D; color: #FFFFFF; border-radius: 16px; padding: 36px 40px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: {{accent}}">Strategie</div>
+<h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700">Die Ziele: souverän, unabhängig, DSGVO-konform – und produktiver</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 8px; background: #16243A; border-radius: 12px; padding: 22px 24px">
+<div style="display: flex; align-items: baseline; gap: 12px"><div style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 500; color: {{accent}}">01</div><div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; color: #FFFFFF">Digitale Souveränität</div></div>
+<div style="font-size: 17px; line-height: 1.45; color: #D5DCE6">Modelle, Gewichte und Daten laufen auf eigener bzw. europäisch betriebener Hardware – ohne Zugriff über den US CLOUD Act.</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; background: #16243A; border-radius: 12px; padding: 22px 24px">
+<div style="display: flex; align-items: baseline; gap: 12px"><div style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 500; color: {{accent}}">02</div><div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; color: #FFFFFF">Kein US-Vendor-Lock-in</div></div>
+<div style="font-size: 17px; line-height: 1.45; color: #D5DCE6">Open-Weight-Modelle sind austauschbar. Keine Bindung an Preise, Nutzungsbedingungen oder Verfügbarkeit einer US-API.</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; background: #16243A; border-radius: 12px; padding: 22px 24px">
+<div style="display: flex; align-items: baseline; gap: 12px"><div style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 500; color: {{accent}}">03</div><div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; color: #FFFFFF">DSGVO-Konformität</div></div>
+<div style="font-size: 17px; line-height: 1.45; color: #D5DCE6">Quellcode und personenbezogene Daten verlassen den eigenen Verantwortungsbereich nicht. Kein Drittlandtransfer.</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; background: #16243A; border-radius: 12px; padding: 22px 24px">
+<div style="display: flex; align-items: baseline; gap: 12px"><div style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 500; color: {{accent}}">04</div><div style="font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; color: #FFFFFF">Produktivität zu planbaren Kosten</div></div>
+<div style="font-size: 17px; line-height: 1.45; color: #D5DCE6">Mehr Leistung des Teams ohne Neueinstellungen – zum festen Monatspreis statt Abrechnung pro Token.</div>
+</div>
+</div>
+<div style="font-size: 18px; line-height: 1.45; color: #D5DCE6">Die Rechnung unten prüft, ob sich diese Strategie auch wirtschaftlich trägt.</div>
 </div>
 
 <div style="display: flex; flex-direction: column; gap: 20px; background: #FFFFFF; border-radius: 16px; padding: 36px 40px">
@@ -154,7 +180,7 @@ a{color:#1F5FAE}a:hover{color:#0F1B2D}
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#E8590C","options":["#E8590C","#D97706","#C2410C"]},"endFactor":{"editor":"range","default":5,"min":1.5,"max":5,"step":0.5,"unit":"×","section":"Szenario"},"storiesPerDev":{"editor":"int","default":8,"min":1,"max":30,"section":"Szenario"},"$preview":{"width":1200,"height":3360}}'>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#E8590C","options":["#E8590C","#D97706","#C2410C"]},"endFactor":{"editor":"range","default":5,"min":1.5,"max":5,"step":0.5,"unit":"×","section":"Szenario"},"storiesPerDev":{"editor":"int","default":8,"min":1,"max":30,"section":"Szenario"},"$preview":{"width":1200,"height":4000}}'>
 class Component extends DCLogic {
 renderVals() {
 const accent = this.props.accent ?? '#E8590C';

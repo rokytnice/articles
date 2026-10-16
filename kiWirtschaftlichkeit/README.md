@@ -2,6 +2,17 @@
 
 Wirtschaftlichkeit von selbst gehosteten Open-Weight-Modellen auf eigener GPU-Hardware – am Beispiel eines Entwicklerteams mit 50 Personen und eines 8× NVIDIA H100 Nodes bei einem europäischen Anbieter.
 
+## Strategie und Ziele
+
+Bevor gerechnet wird: Warum überhaupt eine eigene KI? Die Strategie verfolgt vier Ziele.
+
+1. **Digitale Souveränität:** Modelle, Gewichte und Daten laufen auf eigener bzw. europäisch betriebener Hardware, die das Unternehmen kontrolliert. Bei einem europäischen Anbieter ohne US-Mutterkonzern greift der US CLOUD Act nicht.
+2. **Kein US-Vendor-Lock-in:** Open-Weight-Modelle lassen sich austauschen, ohne Verträge oder Schnittstellen zu wechseln. Keine Bindung an Preise, Nutzungsbedingungen oder Verfügbarkeit einer US-API. Die Abhängigkeit von NVIDIA-Hardware bleibt.
+3. **DSGVO-Konformität:** Quellcode und personenbezogene Daten verlassen den eigenen Verantwortungsbereich nicht. Das vereinfacht Auftragsverarbeitung und vermeidet Drittlandtransfer; technische und organisatorische Maßnahmen bleiben trotzdem nötig.
+4. **Produktivität zu planbaren Kosten:** Mehr Leistung des Teams ohne Neueinstellungen – zum festen Monatspreis statt Abrechnung pro Token.
+
+Die folgende Rechnung prüft, ob sich diese Strategie auch wirtschaftlich trägt.
+
 ![Infografik: Rechnet sich die eigene KI für 50 Entwickler?](bilder/infografik-ki-rentabilitaet.png)
 
 **Infografik:** [PNG](bilder/infografik-ki-rentabilitaet.png) · [PNG @2x](bilder/infografik-ki-rentabilitaet@2x.png) · [PDF](bilder/infografik-ki-rentabilitaet.pdf) · [Quelle (Design-Datei)](quelle/infografik.dc.html)
@@ -84,14 +95,7 @@ Die Ersparnis ist das, was dieselbe Leistung ohne KI zusätzlich an Personal kos
 | Kosten je Story | 938 € → Ø 324 € (195 € in M12) |
 | Mit 4 Nodes (672.000 € / Jahr) | 8,3 Mio. € netto |
 
-## 5. Strategische Kriterien
-
-- **Digitale Souveränität:** Modell, Gewichte und Daten liegen auf Hardware, die das Unternehmen selbst kontrolliert. Bei einem europäischen Anbieter ohne US-Mutterkonzern greift der US CLOUD Act nicht.
-- **Kein Vendor-Lock-in bei Modellen:** Open-Weight-Modelle lassen sich austauschen, ohne Verträge oder Schnittstellen zu wechseln. Die Abhängigkeit von NVIDIA-Hardware bleibt.
-- **DSGVO:** Quellcode und Daten verlassen den eigenen Verantwortungsbereich nicht. Das vereinfacht Auftragsverarbeitung und Drittlandtransfer; technische und organisatorische Maßnahmen bleiben trotzdem nötig.
-- **Planbare Kosten:** Feste Monatspreise statt Abrechnung pro Token.
-
-## 6. Einordnung und Grenzen
+## 5. Einordnung und Grenzen
 
 - **5× ist optimistisch.** Kontrollierte Studien messen bisher meist deutlich kleinere Effekte. Das Szenario zeigt die Obergrenze; schon 30 bis 60 Minuten pro Tag machen die Hardware rentabel.
 - **Ein Node kann zum Engpass werden.** Intensive agentische Nutzung braucht eher 2 bis 4 Nodes. Am Ergebnis ändert das wenig.
